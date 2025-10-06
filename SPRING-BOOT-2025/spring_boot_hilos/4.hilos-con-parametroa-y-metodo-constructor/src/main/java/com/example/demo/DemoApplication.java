@@ -9,8 +9,8 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 
-        Proceso a = new Proceso();
-        Proceso b = new Proceso();
+        Proceso a = new Proceso("Hilo1");
+        Proceso b = new Proceso("Hilo2");
 
         a.valorDeLaCondicion(4);
         b.valorDeLaCondicion(6);
