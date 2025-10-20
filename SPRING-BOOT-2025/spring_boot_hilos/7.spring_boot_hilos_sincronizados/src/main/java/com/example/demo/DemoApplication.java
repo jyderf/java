@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class DemoApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
         Hilo1 hilo1 = new Hilo1();
         Hilo2 hilo2 = new Hilo2();
         Hilo3 hilo3 = new Hilo3();
@@ -55,6 +55,6 @@ public class DemoApplication {
             System.out.println("Error en el hilo5 " + e);
         }
 
-	}
+    }
 
 }
