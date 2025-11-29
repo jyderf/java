@@ -7,38 +7,43 @@ import org.springframework.data.neo4j.core.schema.Node;
 public class Task {
 
     @Id
-    private String id; // en tu BD es 't1', 't2', etc
+    private String id;
 
     private String title;
-    private boolean done;
+
     private String priority;
 
     public Task() {}
 
-    public Task(String id, String title, boolean done, String priority) {
+    public Task(String id, String title, String priority) {
         this.id = id;
         this.title = title;
-        this.done = done;
         this.priority = priority;
     }
 
-    // GETTERS & SETTERS
+    // Getters y Setters
 
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    public String getId() {
+        return id;
+    }
 
-    public String getTitle() { return title; }
-    public void setTitle(String title) { this.title = title; }
+    public void setId(String id) {
+        this.id = id;
+    }
 
-    public boolean isDone() { return done; }
-    public void setDone(boolean done) { this.done = done; }
+    public String getTitle() {
+        return title;
+    }
 
-    public String getPriority() { return priority; }
-    public void setPriority(String priority) { this.priority = priority; }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-    @Override
-    public String toString() {
-        return "Task{id='" + id + "', title='" + title + "', done=" + done +
-                ", priority='" + priority + "'}";
+    public String getPriority() {
+        return priority;
+    }
+
+    public void setPriority(String priority) {
+        this.priority = priority;
     }
 }
